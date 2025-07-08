@@ -1,0 +1,97 @@
+body {
+    background-color: #c3edf8; /* Nova cor de fundo */
+    margin: 0; /* Remove a margem padrão do body */
+    
+}
+
+header {
+    color: #ffffff;
+    display: flex; /* Adicionado display flex */
+    flex-direction: column; /* Adicionado flex-direction column */
+    align-items: flex-start; /* Alinhado à esquerda */
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 40px 0 40px 100px;
+    background-color: #123288; /* Roxo */
+    width: 100%;
+    font-family: 'Arial Black', sans-serif; /* Nova fonte */
+}
+
+header .espaco {
+    height: 5px; /* Define a altura do espaço */
+    background-color: #ffffff; /* Fundo branco */
+    width: 100%;
+}
+
+header nav {
+    background-color: #2867a7; /* Azul mais escuro */
+    width: 100%;
+    padding: 20px 0; /* Adiciona padding ao topo e ao fundo do menu */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header nav ul li {
+    margin-right: 110px; /* Adiciona margem à direita de cada item do menu */
+}
+
+header nav ul li:last-child {
+    margin-right: 0; /* Remove a margem à direita do último item do menu */
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px; /* Ajusta o padding dos links */
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    background-color: #2867a7; /* Cor de fundo quando o mouse passa por cima */
+    color: #08094d; /* Cor do texto quando o mouse passa por cima */
+    transition: background-color 0.8s, color 0.9s; /* Transição suave */
+}
+
+.caixa-texto {
+  background-color: #f7f7f7; /* Cor de fundo */
+  border: 1px solid #ddd; /* Borda */
+  padding: 20px; /* Espaçamento interno */
+  width: 80%; /* Largura */
+  margin: 40px auto; /* Margem e alinhamento */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+  font-size: 24px; /* Aumenta o tamanho da fonte */
+  font-family: 'Georgia', serif; /* Altera a fonte para Georgia */
+}
+
+#contato label {
+  font-size: 20px; /* Aumenta o tamanho da fonte das labels */
+}
+
+#contato input[type="text"], #contato input[type="email"] {
+  width: 50%;
+  height: 8px; /* Aumenta a altura da caixa de texto */
+  padding: 10px;
+  font-size: 16px;
+}
+
+#contato textarea {
+  width: 98%;
+  height: 80px; /* Aumenta a altura da caixa de mensagem */
+  padding: 10px;
+  font-size: 16px;
+}
+
+#contato input[type="submit"] {
+  width: 8%;
+  height: 40px; /* Aumenta a altura do botão */
+  font-size: 18px; /* Aumenta o tamanho da fonte do botão */
+}

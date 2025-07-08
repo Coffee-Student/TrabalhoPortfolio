@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho Portfólio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+   <header>
+    <h1>Rafael Alvarez</h1>
+    <div class="espaco"></div>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="mostrarQuemSouEu()">Quem sou eu?</a></li>
+            <li><a href="#" onclick="mostrarFormacao()">Formação</a></li>
+            <li><a href="#" onclick="mostrarPortfolio()">Portfólio</a></li>
+            <li><a href="#" onclick="mostrarContato()">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div id="quem-sou-eu" style="display: none;">
+      <div class="caixa-texto">
+        <p>Sou Rafael e pretendo trabalhar com TI. Já mudei várias vezes de ideia sobre o que seguir na carreira, mas isso não é problema. Minha indecisão se dá porque tudo parece muito interessante. Então, neste começo, vou tentar fazer de tudo um pouco.</p>
+        <p>Gosto de ouvir música, e não digo isso como a maioria; gosto mesmo. Todo dia preciso de música, então vocês devem imaginar a quantidade de músicas que aprecio. Enfim, alimento minha alma.</p>
+        <p>Também gosto de correr; às vezes faço esportes que exigem corrida, mas na maioria das vezes corro por aí mesmo.</p>
+        <p>Cachorros, café, livros e outras coisas mais fazem parte da minha vida.</p>
+      </div>
+    </div>
+    <div id="formacao" style="display: none;">
+      <div class="caixa-texto">
+        <p>Formado em Artes Visuais</p>
+        <p>Conhecimento em línguas: Inglesa e Espanhol</p>
+        <p>Curso de Hardware</p>
+      </div>
+    </div>
+    <div id="portfolio" style="display: none;">
+      <div class="caixa-texto">
+        <p><a href="https://www.locadoramr.com.br/" target="_blank">Locadora MR</a></p>
+        <p><a href="https://www.filmeseafins.com.br/" target="_blank">Filmes e Afins</a></p>
+        <p><a href="https://www.lojadogames.com.br/" target="_blank">Loja dos Games</a></p>
+      </div>
+    </div>
+    <div id="contato" style="display: none;">
+      <div class="caixa-texto">
+        <form>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome"><br><br>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email"><br><br>
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem"></textarea><br><br>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </div>
+</main>
+
+<script>
+  function mostrarQuemSouEu() {
+    document.getElementById("quem-sou-eu").style.display = "block";
+    document.getElementById("formacao").style.display = "none";
+    document.getElementById("portfolio").style.display = "none";
+    document.getElementById("contato").style.display = "none";
+  }
+
+  function mostrarFormacao() {
+    document.getElementById("formacao").style.display = "block";
+    document.getElementById("quem-sou-eu").style.display = "none";
+    document.getElementById("portfolio").style.display = "none";
+    document.getElementById("contato").style.display = "none";
+  }
+
+  function mostrarPortfolio() {
+    document.getElementById("portfolio").style.display = "block";
+    document.getElementById("quem-sou-eu").style.display = "none";
+    document.getElementById("formacao").style.display = "none";
+    document.getElementById("contato").style.display = "none";
+  }
+
+  function mostrarContato() {
+    document.getElementById("contato").style.display = "block";
+    document.getElementById("quem-sou-eu").style.display = "none";
+    document.getElementById("formacao").style.display = "none";
+    document.getElementById("portfolio").style.display = "none";
+  }
+</script>
+</body>
+</html>
